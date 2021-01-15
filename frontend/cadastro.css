@@ -1,0 +1,42 @@
+form {
+    width: 251px;
+    height: 331px;
+    margin: 50px auto;
+    background: -webkit-linear-gradient(right, #50BC22, #9AE06F, #9AE06F, #50BC22);g
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 32px;
+    font-size: 14px;
+    border: none;
+    border-radius: 17px;
+  }
+
+  #form{
+    height: 255px;
+  } 
+  
+  .form-control {
+    width: 198px;
+    height: 33px;
+    border-radius: 5px;
+    font-size: 10px;
+
+   
+
+  transform: translateY(-50%);
+  }
+  
+  button {
+    width: 198px;
+    height: 27px;
+    border-radius: 12px;
+    font-size: 16px;
+    color: #fff;
+    left: -100%;
+    right: 0;
+    background:  #836DCB;
+    border:none ;
+  }
+
