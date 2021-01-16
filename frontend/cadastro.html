@@ -1,42 +1,87 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
-    <link  rel = "stylesheet" type = "text/css" href ="cadastro.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="cadastro.css" />
     <title>Cadastro</title>
-</head>
+  </head>
 
+  <body>
+    <header></header>
+    <form id="form" action="" method="POST">
+      <a
+        id="cadastro"
+        href="./index.php"
+        style="color: #000; font-size: 16px; text-align: right; margin-top: 3px"
+        >Cadastra-se</a
+      >
+      <div class="form-group">
+        <input
+          class="form-control mb-4 mt-4"
+          type="email"
+          name="email"
+          placeholder="Digite seu Email"
+          required=""
+        />
+        <input
+          class="form-control"
+          type="password"
+          name="senha"
+          placeholder="Digite sua Senha"
+          required=""
+        />
+      </div>
+      <button type="submit">Entrar</button><br />
+      <div class="signup-link" style="font-size: 12px">
+        Esqueceu a sua senha?
+        <a href="#" style="color: rgb(55, 66, 241)">Clique aqui</a>
+      </div>
+    </form>
+    <br />
 
+    <form action="" method="POST">
+      <a
+        href="./index.php"
+        style="color: #000; font-size: 16px; text-align: right"
+        >Login</a
+      >
+      <div class="form-group">
+        <input
+          class="form-control mb-4 mt-4"
+          type="text"
+          name="nome"
+          placeholder="Nome"
+          required=""
+        />
+        <input
+          class="form-control mb-4"
+          type="email"
+          name="email"
+          placeholder="Email"
+          required=""
+        />
+        <input
+          class="form-control mb-4"
+          type="password"
+          name="senha"
+          placeholder="Senha"
+          required=""
+        />
+        <input
+          class="form-control"
+          type="password"
+          name="confirmarSenha"
+          placeholder="Confirmar Senha"
+          required=""
+        />
+      </div>
 
-<body>
-    <Header>
-        
-    </Header>
-       <form id="form" action="" method="POST">
-        <a id="cadastro" href="./index.php" style="color: #000; font-size: 16px; text-align:right ; margin-top: 3px ;">Cadastra-se</a>
-            <div class="form-group">
-                <input class="form-control mb-4 mt-4" type="email" name="email" placeholder="Digite seu Email" required="">
-                <input class="form-control" type="password" name="senha" placeholder="Digite sua Senha" required="">
-            </div>
-            <button type="submit">Entrar</button><br>
-            <div class="signup-link " style="font-size: 12px">Esqueceu a sua senha? <a href="#" style="color: rgb(55, 66, 241)" >Clique aqui</a></div>
-      </form>
-      <br>
-
-
-      <form action="" method="POST">
-        <a href="./index.php" style="color: #000; font-size: 16px; text-align:right">Login</a>
-            <div class="form-group">
-                <input class="form-control mb-4 mt-4"type="text" name="nome" placeholder="Nome" required="">
-                <input class="form-control mb-4" type="email" name="email" placeholder="Email" required="">
-                <input class="form-control mb-4" type="password" name="senha" placeholder="Senha" required="">
-                <input class="form-control " type="password" name="confirmarSenha" placeholder="Confirmar Senha" required="">
-            </div>
-        
-        <button type="submit">Cadastrar</button>
-        
-      </form>
-</body>
+      <button type="submit">Cadastrar</button>
+    </form>
+  </body>
 </html>
