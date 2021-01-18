@@ -1,0 +1,53 @@
+body{
+  background-color: #efecec;
+  background: -webkit-linear-gradient(right, #836DCB, #efecec,#efecec,#836DCB);
+  padding: 10%;
+}
+
+#link{
+ color: black; 
+ font-size: 16px; 
+ text-align:right ; 
+ margin-top: 3px ;
+}
+#senha{
+  font-size: 12px;
+  color: rgb(55, 66, 241);
+}
+
+form {
+  width: 270px;
+  height: 550px;
+  margin: 50px auto;
+  background: -webkit-linear-gradient(right,  #50BC22, #9AE06F, #9AE06F,  #50BC22);
+  align-items: center;
+  float: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 14px;
+  border: none;
+  border-radius: 17px;
+}
+  
+.form-control {
+  width: 220px;
+  height: 33px;
+  border-radius: 5px;
+  font-size: 10px;  
+}
+  
+button{
+  width: 220px;
+  height: 27px;
+  border-radius: 15px;
+  font-size: 16px;
+  color: #fff;
+  background:  #836DCB;
+  border:none ;
+}
+
+#icone{
+  width: 200px;
+}
+ 
