@@ -1,3 +1,13 @@
+<?php 
+
+
+$url = "http://localhost:81/backend/quiz.php";
+$questoes = json_decode(file_get_contents($url));
+
+
+print_r($questoes);
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -58,7 +68,6 @@
                 </div>
             </footer>
         </main>
-
     </div>
 </body>
 </html>
