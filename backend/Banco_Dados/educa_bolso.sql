@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 18-Jan-2021 às 21:41
+-- Tempo de geração: 19-Jan-2021 às 23:34
 -- Versão do servidor: 10.4.17-MariaDB
 -- versão do PHP: 8.0.0
 
@@ -34,6 +34,24 @@ CREATE TABLE `contasfixas` (
   `vencimento` date NOT NULL,
   `data_publicada` datetime DEFAULT current_timestamp(),
   `user_id` int(11) DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `perfil`
+--
+
+CREATE TABLE `perfil` (
+  `ID` int(10) UNSIGNED ZEROFILL NOT NULL,
+  `etinia` varchar(30) DEFAULT NULL,
+  `genero` varchar(30) DEFAULT NULL,
+  `data_nasc` date DEFAULT NULL,
+  `endereco` varchar(50) DEFAULT NULL,
+  `escolaridade` varchar(30) DEFAULT NULL,
+  `situacao_profissional` varchar(40) DEFAULT NULL,
+  `faixa_salarial` float DEFAULT NULL,
+  `Id_perfil` int(11) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -87,6 +105,13 @@ ALTER TABLE `contasfixas`
   ADD KEY `fk_UserConta` (`user_id`);
 
 --
+-- Índices para tabela `perfil`
+--
+ALTER TABLE `perfil`
+  ADD PRIMARY KEY (`ID`),
+  ADD KEY `fk_perfil` (`Id_perfil`);
+
+--
 -- Índices para tabela `perguntas`
 --
 ALTER TABLE `perguntas`
@@ -114,6 +139,12 @@ ALTER TABLE `usuario`
 --
 ALTER TABLE `contasfixas`
   MODIFY `idcontasfixas` int(10) UNSIGNED ZEROFILL NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT de tabela `perfil`
+--
+ALTER TABLE `perfil`
+  MODIFY `ID` int(10) UNSIGNED ZEROFILL NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de tabela `perguntas`
